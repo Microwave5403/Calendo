@@ -2,7 +2,7 @@
 
 Calendo 是一款使用 Flutter 构建的、面向桌面的智能日历与任务管理应用。它将传统的日历视图与待办事项列表（Todo List）相结合，并集成了 AI 大语言模型（LLM）能力，可以帮助用户自动规划和安排任务。
 
-![Exmaple](docs/exmaple.png)
+![Exmaple](docs/example.png)
 
 ## ✨ 主要功能
 
