@@ -12,10 +12,22 @@ import 'package:calendo/widgets/event_overlay_portal.dart';
 import 'package:calendo/cache_eventscontroller.dart';
 import 'package:calendo/cache.dart';
 import 'package:calendo/LLM.dart';
+import 'package:window_manager/window_manager.dart';
 
 void main() async{
   // debugPaintSizeEnabled = true;
   WidgetsFlutterBinding.ensureInitialized();
+  await windowManager.ensureInitialized();
+  // 启动即最大化
+  await windowManager.waitUntilReadyToShow(
+    const WindowOptions(),
+    () async {
+      // await windowManager.maximize(); // 系统级最大化（等窗口就绪后）
+      await windowManager.show();
+      await windowManager.focus();
+    },
+  );
+
   // 只加载中文
   await initializeDateFormatting('zh_CN',null);
   runApp(

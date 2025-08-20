@@ -43,6 +43,7 @@ dependencies:
   path_provider: ^2.1.5
   dart_openai: ^5.1.0
   http: ^1.5.0
+  window_manager: ^0.5.1
 
 dev_dependencies:
   flutter_test:
